@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script src="script.js" defer></script>
+<link rel="shortcut icon" href="./Favicon.PNG" type="image/x-icon">
+    <title>We’re done here.</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&display=swap'
+        rel='stylesheet'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <script>
+        let future = 1;
+        if (sessionStorage.getItem('starting') == 1){
+            future = 7;
+        }
+    </script>
+    <div class='cover-image'></div>
+    <div class='content'>
+        <p>You sit back in the chair and wait for her to return. Once she does, you flash her a smile and leave. You
+            have work to do.</p>
+    </div>
+    <div class='options'>
+        <button onclick='window.location.href = `future`+future+`.html`'>Switch Timelines</button>
+    </div>
+</body>
+
+</html>

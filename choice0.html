@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="shortcut icon" href="./Favicon.PNG" type="image/x-icon">
+    <title>The ultimate choice</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&display=swap'
+        rel='stylesheet'>
+    <link rel='stylesheet' href='style.css'>
+    <style>
+        .content{
+            width: 900px;
+        }
+        .content-options {
+            display: flex;
+            flex-direction: row;
+        }
+        .content-options > p{
+            background-color: #111;
+            padding: 20px;
+            margin: 10px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .content-options > p:nth-child(2){
+            color: var(--accent-2);
+        }
+        .content-options > p:nth-child(3){
+            color: var(--accent-3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class='cover-image'></div>
+    <div class='content'>
+        <h1>The Ultimate Choice</h1>
+        <p>You storm out, contemplating the choices ahead of you. </p>
+        <div class="content-options">
+            <p onclick='window.location.href = `choice3.html`'>You don’t trust Nichole. You need to go back and stop her from developing Project Leap. Stop Project Leap.</p>
+            <p onclick='window.location.href = `choice2.html`'>Nichole worked on the AI. She would know who the mole is. You can go back and ask her for help.</p>
+            <p onclick='window.location.href = `choice1.html`'>Going back in time is a big deal. Even if you do, who can guarantee the outcome? What if you change something much worse? Don’t build a time machine.</p>
+        </div>
+    </div>
+</body>
+
+</html>

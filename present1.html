@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+<link rel="shortcut icon" href="./Favicon.PNG" type="image/x-icon">
+    <title>Present Introduction - 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content{
+            display: flex;
+            width: 800px;
+            text-align: left;
+        }
+
+        .content > img{
+            width: 150px;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let future = 1;
+        if (sessionStorage.getItem('starting') == 1){
+            future = 7;
+        }
+    </script>
+    <div class="cover-image"></div>
+    <div class="content">
+        <img src="https://cdn.britannica.com/19/181919-050-0352D354/John-Thune.jpg" alt="Protagonait's Father">
+        <!-- <h1>Welcome to Vinaash</h1> -->
+        <p>A holographic red square hovers over the city below. You can’t believe you work here - at the cutting edge of
+            technological revolution. It’s been a month since you started and you're already blown away by all the
+            innovations your colleagues are developing.
+            <br><br>
+            You take a look at the picture of your dad hanging on the wall before walking out the door.
+        </p>
+    </div>
+    <div class='options'>
+        <button onclick='window.location.href = `present2.html`'>Go to best friend</button>
+        <button onclick='window.location.href = `future`+future+`.html`'>Switch Timelines</button>
+    </div>
+    <script>
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="shortcut icon" href="./Favicon.PNG" type="image/x-icon">
+    <title>Why chronometer?</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&display=swap'
+        rel='stylesheet'>
+    <link rel='stylesheet' href='style.css'>
+    <style>
+        :root {
+            --accent-1: #4580ff;
+        }        .cover-image {
+            background-image: url('https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMHNwYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+            background-position: center;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let present = 9;
+        if (sessionStorage.getItem('starting') == 1){
+            present = 6;
+        }
+    </script>
+    <div class='cover-image'></div>
+    <div class='content'>
+        <p>What would have been your reaction if you had witnessed a fish climbing a tree alongside a monkey. Utter
+            disbelief, No or maybe just checking out whether or not your last meal got spiked , cause it just didn't
+            belong. Similarly hearing the word chronometer gave me that ick.
+            Whirpooling through all the knowledge you gained in your life, suddenly it hits “It can’t be!” The plan was
+            never to find another place to live, not to return back in time to our previous one.
+            <br><br>
+            They... the captain..They are building a time machine.
+        </p>
+    </div>
+    <div class='options'>
+        <button onclick='window.location.href = `present`+present+`.html`'>Switch Timelines</button>
+    </div>
+</body>
+
+</html>
